@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <iostream>
@@ -15,22 +14,26 @@ private:
 public:
 
     clsString()
-    {
+    {   
+        // Default Constructor
         _Value = "";
     }
 
     clsString(string Value)
     {
+        // Parametrized Constructor
         _Value = Value;
     }
 
     void SetValue(string Value) 
     {
+        // Set Function
         _Value = Value;
     }
 
     string GetValue()
     {
+        // Get Function
         return _Value;
     }
 
@@ -84,6 +87,7 @@ public:
 
     static string  UpperFirstLetterOfEachWord(string S1)
     {
+        // Function to change first letter of each word in the string to Upper Case
 
         bool isFirstLetter = true;
 
@@ -96,6 +100,7 @@ public:
 
             }
 
+            // If the current char is space so the next will be the first letter of a new word
             isFirstLetter = (S1[i] == ' ' ? true : false);
 
         }
