@@ -365,7 +365,7 @@ public:
 
     static string TrimLeft(string S1)
     {
-
+        // Remove spaces on left side
 
         for (short i = 0; i < S1.length(); i++)
         {
@@ -403,6 +403,8 @@ public:
 
     static string Trim(string S1)
     {
+        // Remove any spaces on left or right side
+
         return (TrimLeft(TrimRight(S1)));
 
     }
@@ -415,6 +417,8 @@ public:
     static string JoinString(vector<string> vString, string Delim)
     {
 
+        // Join words in vector into one string
+
         string S1 = "";
 
         for (string& s : vString)
@@ -422,6 +426,7 @@ public:
             S1 = S1 + s + Delim;
         }
 
+        // Remove delimiter added after the string
         return S1.substr(0, S1.length() - Delim.length());
 
 
@@ -473,6 +478,8 @@ public:
 
     static string ReplaceWord(string S1, string StringToReplace, string sRepalceTo, bool MatchCase = true)
     {
+
+        
 
         vector<string> vString = Split(S1, " ");
 

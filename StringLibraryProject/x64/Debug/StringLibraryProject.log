@@ -1,2 +1,21 @@
 ﻿  StringLibraryProject.cpp
-  StringLibraryProject.vcxproj -> D:\Desktop\StringLibraryProject\x64\Debug\StringLibraryProject.exe
+D:\Desktop\Course\Course(45,25): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file '../../../Course#10/StringLibraryProject/StringLibraryProject/StringLibraryProject.cpp')
+  
+D:\Desktop\Course\Course(50,29): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file '../../../Course#10/StringLibraryProject/StringLibraryProject/StringLibraryProject.cpp')
+  
+D:\Desktop\Course\Course(62,30): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file '../../../Course#10/StringLibraryProject/StringLibraryProject/StringLibraryProject.cpp')
+  
+D:\Desktop\Course\Course(205,29): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file '../../../Course#10/StringLibraryProject/StringLibraryProject/StringLibraryProject.cpp')
+  
+D:\Desktop\Course\Course(341,30): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file '../../../Course#10/StringLibraryProject/StringLibraryProject/StringLibraryProject.cpp')
+  
+D:\Desktop\Course\Course(389,22): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file '../../../Course#10/StringLibraryProject/StringLibraryProject/StringLibraryProject.cpp')
+  
+  LINK : D:\Desktop\Course\Course#10\StringLibraryProject\x64\Debug\StringLibraryProject.exe not found or not built by the last incremental link; performing full link
+  StringLibraryProject.vcxproj -> D:\Desktop\Course\Course#10\StringLibraryProject\x64\Debug\StringLibraryProject.exe
