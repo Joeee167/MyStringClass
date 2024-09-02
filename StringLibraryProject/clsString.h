@@ -145,6 +145,8 @@ public:
 
     static string  UpperAllString(string S1)
     {
+        // Change all characters to upper case
+
         for (short i = 0; i < S1.length(); i++)
         {
             S1[i] = toupper(S1[i]);
@@ -173,6 +175,8 @@ public:
 
     static char  InvertLetterCase(char char1)
     {
+        // change lower case letter to upper and vice versa
+
         return isupper(char1) ? tolower(char1) : toupper(char1);
     }
 
@@ -194,7 +198,7 @@ public:
 
     static short CountLetters(string S1, enWhatToCount WhatToCount = enWhatToCount::All)
     {
-
+        // if enum value is all count all letters
 
         if (WhatToCount == enWhatToCount::All)
         {
@@ -202,6 +206,8 @@ public:
         }
 
         short Counter = 0;
+
+        // otherwise , count upper or lower case letters depending on enum value
 
         for (short i = 0; i < S1.length(); i++)
         {
@@ -264,17 +270,20 @@ public:
 
     static short  CountSpecificLetter(string S1, char Letter, bool MatchCase = true)
     {
+        // Count specific letter
 
         short Counter = 0;
 
         for (short i = 0; i < S1.length(); i++)
         {
-
+            // if match case flag is true count letter if it matches the case of " Letter " variable only
             if (MatchCase)
             {
                 if (S1[i] == Letter)
                     Counter++;
             }
+
+            // otherwise , count the letter in upper and lower case
             else
             {
                 if (tolower(S1[i]) == tolower(Letter))
