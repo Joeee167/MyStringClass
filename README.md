@@ -28,3 +28,35 @@
 
       return S1;
     }
+
+   A function to count all string letters or just upper or lower case letters depending on enum value
+   
+       static short CountLetters(string S1, enWhatToCount WhatToCount = enWhatToCount::All)
+    {
+       // if enum value is all count all letters
+
+       if (WhatToCount == enWhatToCount::All)
+       {
+           return S1.length();
+       }
+
+       short Counter = 0;
+
+       // otherwise , count upper or lower case letters depending on enum value
+
+       for (short i = 0; i < S1.length(); i++)
+       {
+
+           if (WhatToCount == enWhatToCount::CapitalLetters && isupper(S1[i]))
+               Counter++;
+
+
+           if (WhatToCount == enWhatToCount::SmallLetters && islower(S1[i]))
+               Counter++;
+
+
+       }
+
+       return Counter;
+
+    }
